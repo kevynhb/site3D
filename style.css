@@ -1,0 +1,112 @@
+body{
+    font-family: 'Roboto';
+    font-size: px;
+    background-color: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.page {
+    display: flex;
+    flex-wrap: wrap;
+}
+.topBar {
+    height: 200px;
+}
+.section {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.menu {
+    background-color: rgb(36, 36, 36);
+    height: 400px;
+}
+
+.cabecalho {
+    background-color: rgb(43, 40, 40);
+}
+
+.conteudo {
+    background-color: rgb(36, 36, 36);
+    height: 600PX;
+}
+
+.conteudo2 {
+    background-color: rgb(43, 40, 40);
+}
+
+.secao1 {
+    background-color: #47443f;
+}
+
+.secao2 {
+    background-color: #382828;
+}
+
+.secao3 {
+    background-color: #3a3a3d;
+}
+
+h3 {
+    display: flex;
+    text-align: center;
+}
+
+p {
+    color: white;
+}
+
+/* REGRA DE ESTILO PARA DISPOSITIVOS MÓVEIS */
+@media only screen and (max-width:400px) {
+    
+}
+/* REGRA DE ESTILO PARA TABLET */
+@media only screen and (min-width:401px) and (max-width: 960px) {
+    .conteudo2,
+    .secao1,
+    .secao2,
+    .secao3 {
+        width: 50%;
+    }
+}
+/* REGRA DE ESTILO PARA DESKTOP */
+@media only screen and (min-width:961px) {
+    .page {
+        width: 960px;
+        margin: 0 auto;
+    }
+    .secao1,
+    .secao2,
+    .secao3 {
+        width: 33.3%;
+    }
+    .cabecalho {
+        height: 400px;
+    }
+    .conteudo2 {
+        height: 200px;
+        order: 1;
+    }
+    .conteudo {
+        order: 2;
+    }
+}
+
+#aug {
+    width: 70%;
+    height: 70%;
+    margin: 0 auto;
+}
+
+model-viewer {
+    width: 100%;
+    height: 100%;
+}
